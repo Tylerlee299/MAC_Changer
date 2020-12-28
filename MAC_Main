@@ -17,8 +17,6 @@ def get_arguments():
 
 def change_mac(interface, new_mac):
     print("[+] Changing Mac address for " + interface + " to " + new_mac)
-    # More secure code-by separating like this, it tells python that it's all part of the same command (ifconfig)
-    # Without it, a hacker could add in another command where "interface" is and hijack the code
     subprocess.call(["ifconfig", interface, "down"])
     subprocess.call(["ifconfig", interface, "hw", "ether", new_mac])
     subprocess.call(["ifconfig", interface, "up"])
