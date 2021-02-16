@@ -1,6 +1,6 @@
 # MAC_Changer
 MAC address changer
-This allows a user to change their MAC address through a terminal. 
+This allows a user to change their MAC address through a terminal-ensures anonymity
 Specify interface using -i
 Specify new MAC address using -m
 Use -h for help
